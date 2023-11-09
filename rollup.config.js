@@ -8,6 +8,7 @@ import summary from 'rollup-plugin-summary';
 import {terser} from 'rollup-plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
+import litSass from '@j1shin/rollup-plugin-lit-sass';
 import ts from 'rollup-plugin-ts';
 
 export default {
@@ -24,6 +25,12 @@ export default {
   plugins: [
     ts(),
     resolve(),
+    litSass({
+      includePaths: [
+        'node_modules',
+        // specific module folders for @import "./{file}" statements
+      ],
+    }),
     /**
      * This minification setup serves the static site generation.
      * For bundling and minification, check the README.md file.
