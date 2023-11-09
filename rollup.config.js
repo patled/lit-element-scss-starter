@@ -8,6 +8,7 @@ import summary from 'rollup-plugin-summary';
 import {terser} from 'rollup-plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import replace from '@rollup/plugin-replace';
+import ts from 'rollup-plugin-ts';
 
 export default {
   input: 'my-element.js',
@@ -21,7 +22,7 @@ export default {
     }
   },
   plugins: [
-    replace({'Reflect.decorate': 'undefined'}),
+    ts(),
     resolve(),
     /**
      * This minification setup serves the static site generation.
