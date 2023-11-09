@@ -7,7 +7,6 @@
 import {terser} from 'rollup-plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import outputSize from 'rollup-plugin-output-size';
-import replace from '@rollup/plugin-replace';
 import litSass from '@j1shin/rollup-plugin-lit-sass';
 import ts from 'rollup-plugin-ts';
 
