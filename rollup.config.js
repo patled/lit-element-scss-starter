@@ -11,10 +11,10 @@ import litSass from '@j1shin/rollup-plugin-lit-sass';
 import ts from 'rollup-plugin-ts';
 
 export default {
-  input: 'src/my-element.ts',
+  input: ['src/my-element.ts', 'src/test/my-element_test.ts'],
   output: {
-    file: 'my-element.js',
-    format: 'esm',
+    dir: './build',
+    format: 'esm'
   },
   onwarn(warning) {
     if (warning.code !== 'THIS_IS_UNDEFINED') {
