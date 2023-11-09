@@ -4,8 +4,8 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-import {LitElement, html, css} from 'lit';
-import {customElement, property} from 'lit/decorators.js';
+import { LitElement, html, css } from 'lit';
+import { customElement, property } from 'lit/decorators.js';
 import myElementStyles from './my-element.scss';
 
 /**
@@ -17,7 +17,7 @@ import myElementStyles from './my-element.scss';
  */
 @customElement('my-element')
 export class MyElement extends LitElement {
-  static override styles = [myElementStyles({css})];
+  static override styles = [myElementStyles({ css })];
 
   /**
    * The name to say "Hello" to.
@@ -28,7 +28,7 @@ export class MyElement extends LitElement {
   /**
    * The number of times the button has been clicked.
    */
-  @property({type: Number})
+  @property({ type: Number })
   count = 0;
 
   override render() {
