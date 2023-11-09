@@ -6,6 +6,7 @@
 
 import {LitElement, html, css} from 'lit';
 import {customElement, property} from 'lit/decorators.js';
+import myElementStyles from './my-element.scss';
 
 /**
  * An example element.
@@ -16,14 +17,7 @@ import {customElement, property} from 'lit/decorators.js';
  */
 @customElement('my-element')
 export class MyElement extends LitElement {
-  static override styles = css`
-    :host {
-      display: block;
-      border: solid 1px gray;
-      padding: 16px;
-      max-width: 800px;
-    }
-  `;
+  static override styles = [myElementStyles({css})];
 
   /**
    * The name to say "Hello" to.
