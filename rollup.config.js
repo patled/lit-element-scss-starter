@@ -11,9 +11,9 @@ import replace from '@rollup/plugin-replace';
 import ts from 'rollup-plugin-ts';
 
 export default {
-  input: 'my-element.js',
+  input: 'src/my-element.ts',
   output: {
-    file: 'my-element.bundled.js',
+    file: 'my-element.js',
     format: 'esm',
   },
   onwarn(warning) {
