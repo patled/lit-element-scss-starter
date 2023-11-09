@@ -14,7 +14,7 @@ export default {
   input: ['src/my-element.ts', 'src/test/my-element_test.ts'],
   output: {
     dir: './build',
-    format: 'esm'
+    format: 'esm',
   },
   onwarn(warning) {
     if (warning.code !== 'THIS_IS_UNDEFINED') {
