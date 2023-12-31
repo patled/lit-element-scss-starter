@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: BSD-3-Clause
  */
 
-import { terser } from 'rollup-plugin-terser';
+import terser from '@rollup/plugin-terser';
 import resolve from '@rollup/plugin-node-resolve';
 import outputSize from 'rollup-plugin-output-size';
 import litSass from '@j1shin/rollup-plugin-lit-sass';
