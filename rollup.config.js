@@ -42,7 +42,8 @@ export default {
         properties: {
           regex: /^__/
         }
-      }
+      },
+      maxWorkers: 8
     }),
     outputSize({
       gzip: false
