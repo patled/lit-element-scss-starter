@@ -6,3 +6,4 @@ custom-elements.json
 my-element.bundled.js
 /.vscode/settings.json
 /build
+.DS_Store
